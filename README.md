@@ -8,11 +8,11 @@ Author: Kien Phan Huy on the 14th of July 2020. Copyright 2020
 I started to develop this program years ago. This is a "light" version of the program I initially created using MATLAB.
 This version works on GNU Octave and needs no packages. So it is very easy to use.
 
-It borrows some codes from other projets as it 
-% Uses the Min Phase response computation from J.O. Smith, 1982-2002
-% Uses amodified version of Oct_spectrum from M. Buzzoni, Dec. 2018
-% Uses IIR butterworth coefficient computation from Neil Robertson , 12/29/17
-% Uses embbeded waitbar Yuanfei (2020). Embedding Waitbar Inside A GUI (https://www.mathworks.com/matlabcentral/fileexchange/47896-embedding-waitbar-inside-a-gui), MATLAB Central File Exchange. Retrieved July 15, 2020. 
+It borrows some codes from other projets as it: 
+Uses the Min Phase response computation from J.O. Smith, 1982-2002
+Uses amodified version of Oct_spectrum from M. Buzzoni, Dec. 2018
+Uses IIR butterworth coefficient computation from Neil Robertson , 12/29/17
+Uses embbeded waitbar Yuanfei (2020). Embedding Waitbar Inside A GUI (https://www.mathworks.com/matlabcentral/fileexchange/47896-embedding-waitbar-inside-a-gui), MATLAB Central File Exchange. Retrieved July 15, 2020. 
 
 for which Copyright is reminded in the following:
 

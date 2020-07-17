@@ -5,7 +5,7 @@
 % Uses IIR butterworth coefficient computation from Neil Robertson , 12/29/17
 % Uses embbeded waitbar Yuanfei (2020). Embedding Waitbar Inside A GUI (https://www.mathworks.com/matlabcentral/fileexchange/47896-embedding-waitbar-inside-a-gui), MATLAB Central File Exchange. Retrieved July 15, 2020. 
 % See copyrights for subfunctions and rootine below
-function Cuki_IR_gen1i()
+function Cuki_IR_gen1j()
   % Creation figure
   dlg = figure('name','Cuki IR generator light v1.0', 'position',[143 129 1024 768], 'menubar','none', 'numbertitle','off');
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -25,9 +25,9 @@ function Cuki_IR_gen1i()
   icfg=uicontrol(dlg,'style','popupmenu', 'string',{'Pickup in CH1, Mic in CH2','Pickup in CH2, Mic in CH1'}, ...
       'position',[300 740 300 30]);  
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
-  hh=-15; % decalage tout sauf début
-  h2=-30; % décalage sous interface audio
-  dd=100; % décalage droite interface audio
+  hh=-15; % decalage tout sauf dÃ©but
+  h2=-30; % dÃ©calage sous interface audio
+  dd=100; % dÃ©calage droite interface audio
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
   % Wait bar
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
@@ -774,7 +774,7 @@ function Save(hObject, eventdata,ax,ai,devinfo,fsfmt,icfg,listfmt,Svfmt,Fnam)
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % generate PEQ
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  g=-6; % -6dB à la resonance
+  g=-6; % -6dB Ã  la resonance
   Q=3;
   fc=f_mx;
   
@@ -1204,7 +1204,7 @@ endfunction
 ##* Redistributions in binary form must reproduce the above copyright notice,
 ##  this list of conditions and the following disclaimer in the documentation
 ##  and/or other materials provided with the distribution
-##* Neither the name of Università degli Studi di Ferrara nor the names of its
+##* Neither the name of UniversitÃ  degli Studi di Ferrara nor the names of its
 ##  contributors may be used to endorse or promote products derived from this
 ##  software without specific prior written permission.
 ##THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
@@ -1220,7 +1220,7 @@ endfunction
 ##
 ##
 ##``Introduction to Digital Filters with Audio Applications'', by Julius O. Smith III, (September 2007 Edition).
-##Copyright © 2020-05-11 by Julius O. Smith III
+##Copyright Â© 2020-05-11 by Julius O. Smith III
 ##Center for Computer Research in Music and Acoustics (CCRMA),   Stanford University
 ##
 ##Copyright (c) 2014, Yuanfei

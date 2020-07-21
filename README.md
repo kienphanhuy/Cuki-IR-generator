@@ -8,6 +8,14 @@ Author: Kien Phan Huy on the 14th of July 2020. Copyright 2020
 I started to develop this program years ago. This is a "light" version of the program I initially created using MATLAB.
 This version works on GNU Octave and needs no packages. So it is very easy to use.
 
+----------------------------------------------------------------------
+Version v1.0l uploaded 21/07/2020
+Filename: Cuki_IR_gen1l.m
+Bug fix regarding 44100 Hz recordings IR computation
+Bug fix regarding double clic on Mic/Pickup/IR
+Buf fix regarding clic on Mic/Pickup/IR while Mic/Pickup/IR is already playing
+----------------------------------------------------------------------
+
 It borrows some codes from other projets as it: 
 
 Uses the Min Phase response computation from J.O. Smith, 1982-2002

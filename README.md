@@ -9,11 +9,18 @@ I started to develop this program years ago. This is a "light" version of the pr
 This version works on GNU Octave and needs no packages. So it is very easy to use.
 
 ----------------------------------------------------------------------
+Version v1.0n uploaded 21/07/2020
+Filename: Cuki_IR_gen1l.m
+Bug fix regarding low mode resonance detection
+Added J45 Jon Fields open source algorithm in the save option (Copyright Jon Fields 2020)
+
 Version v1.0l uploaded 21/07/2020
 Filename: Cuki_IR_gen1l.m
 Bug fix regarding 44100 Hz recordings IR computation
 Bug fix regarding double clic on Mic/Pickup/IR
-Buf fix regarding clic on Mic/Pickup/IR while Mic/Pickup/IR is already playing
+Bug fix regarding clic on Mic/Pickup/IR while Mic/Pickup/IR is already playing
+
+
 ----------------------------------------------------------------------
 
 It borrows some codes from other projets as it: 

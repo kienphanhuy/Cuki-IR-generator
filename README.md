@@ -14,6 +14,10 @@ Version v1.0p uploaded 24/07/2020
 Filename: Cuki_IR_gen1p.m
 Bug fix GUI now starts even if you have more audio-interface outputs than inputs
 
+Version v1.0r uploaded 28/11/2020
+Filename: Cuki_IR_gen1r.m
+Generate an "itp" file with smoother high end. (less harshness)
+
 Version v1.0o uploaded 22/07/2020
 Filename: Cuki_IR_gen1o.m
 Bug fix GUI shrinks with the window

@@ -16,9 +16,9 @@ function Cuki_IR_gen1r()
   u2=[20 740 280 30]./Nu;
   u3=[300 740 300 30]./Nu;
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
-  hh=-15; % decalage tout sauf début
-  h2=-30; % décalage sous interface audio
-  dd=100; % décalage droite interface audio
+  hh=-15; % decalage tout sauf dÃ©but
+  h2=-30; % dÃ©calage sous interface audio
+  dd=100; % dÃ©calage droite interface audio
   u4=[450 635+hh+h2 500 20]./Nu;;
   u5=[20 710+hh 500 30]./Nu;
   u6=[50 680+hh dd 30]./Nu;
@@ -71,9 +71,9 @@ function Cuki_IR_gen1r()
   icfg=uicontrol(dlg,'style','popupmenu', 'string',{'Pickup in CH1, Mic in CH2','Pickup in CH2, Mic in CH1'}, ...
       'units','normalized','position',u3);  
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
-  hh=-15; % decalage tout sauf début
-  h2=-30; % décalage sous interface audio
-  dd=100; % décalage droite interface audio
+  hh=-15; % decalage tout sauf dÃ©but
+  h2=-30; % dÃ©calage sous interface audio
+  dd=100; % dÃ©calage droite interface audio
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
   % Wait bar
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
@@ -196,7 +196,7 @@ function Cuki_IR_gen1r()
       'fontangle','italic', 'horizontalalignment','left');
   Svfmt=uicontrol(dlg,'style','popupmenu', 'string',{'Standard','Various flavours','Feedback friendly','JF45 Copyright: Jon Fields'}, ...
       'units','normalized','position',u27);
-  if ispc   
+  if ispc|isunix % Luke Pinner suggestion   
       uicontrol(dlg, 'style','pushbutton', 'string','Save','units','normalized', 'position',u28, 'callback',{@Save,ax,ai,devinfo,fsfmt,icfg,listfmt,Svfmt});
   endif
   if ismac
@@ -562,8 +562,8 @@ pp=[p+100;p2+100];
 ##plot(10*log10(cf),p-p2)
 
 g0=p-p2; % SB-SB2;    
-%dgain=zeros(31,1); % il est là le problème
-dgain=zeros(length(cf),1); % il est là le problème
+%dgain=zeros(31,1); % il est lÃ  le problÃ¨me
+dgain=zeros(length(cf),1); % il est lÃ  le problÃ¨me
 
 
 for qq=1:3, % iteration GEQ fit
@@ -689,7 +689,7 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function Mic(hObject, eventdata,ax,ai,devinfo,fsfmt,icfg,ao,uilisten)
   
-  if (get(hObject,'value')&&(get(uilisten,'value')==0))   % égal à 1 => true
+  if (get(hObject,'value')&&(get(uilisten,'value')==0))   % Ã©gal Ã  1 => true
     set(uilisten,'value',1);
     handles = guidata(hObject);
     y=handles.y;
@@ -729,7 +729,7 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function Pickup(hObject, eventdata,ax,ai,devinfo,fsfmt,icfg,ao,uilisten)
 
-if (get(hObject,'value')&&(get(uilisten,'value')==0))   % égal à 1 => true
+if (get(hObject,'value')&&(get(uilisten,'value')==0))   % Ã©gal Ã  1 => true
     set(uilisten,'value',1);
     handles = guidata(hObject);
     y=handles.y;
@@ -765,7 +765,7 @@ end
 % Listen to IR
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function IR(hObject, eventdata,ax,ai,devinfo,fsfmt,icfg,ao,uilisten)
-if (get(hObject,'value')&&(get(uilisten,'value')==0))   % égal à 1 => true
+if (get(hObject,'value')&&(get(uilisten,'value')==0))   % Ã©gal Ã  1 => true
     set(uilisten,'value',1);  
   handles = guidata(hObject);
   y=handles.y;
@@ -953,7 +953,7 @@ IRITP=yy/max(abs(yy))*0.95;
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % generate PEQ
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  g=-6; % -6dB à la resonance
+  g=-6; % -6dB Ã  la resonance
   Q=3;
   fc=f_mx;
   
@@ -1470,7 +1470,7 @@ endfunction
 ##* Redistributions in binary form must reproduce the above copyright notice,
 ##  this list of conditions and the following disclaimer in the documentation
 ##  and/or other materials provided with the distribution
-##* Neither the name of Università degli Studi di Ferrara nor the names of its
+##* Neither the name of UniversitÃ  degli Studi di Ferrara nor the names of its
 ##  contributors may be used to endorse or promote products derived from this
 ##  software without specific prior written permission.
 ##THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
@@ -1486,7 +1486,7 @@ endfunction
 ##
 ##
 ##``Introduction to Digital Filters with Audio Applications'', by Julius O. Smith III, (September 2007 Edition).
-##Copyright © 2020-05-11 by Julius O. Smith III
+##Copyright Â© 2020-05-11 by Julius O. Smith III
 ##Center for Computer Research in Music and Acoustics (CCRMA),   Stanford University
 ##
 ##Copyright (c) 2014, Yuanfei

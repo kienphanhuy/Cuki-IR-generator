@@ -25,8 +25,11 @@ All you need is:
 * Open the script Cuki_IR_gen1r.m and run it.
 * Follow the steps on [the youtube video](https://youtu.be/5-6pklunzkI)
 
-## For Linux Users
-* The save button is not visible by default, so you need to activated by replacing all occurrences of `ispc` with `ispc|isunix`.
+## Notes:
+
+* Linux Users: The save button is not visible by default, so you need to activated by replacing all occurrences of `ispc` with `ispc|isunix` (Check: https://github.com/kienphanhuy/Cuki-IR-generator/issues/1).
+
+* A wav file containing a previous audio recording, with DI on left channel an MIC on right channel, can be use but the button must be enable by uncommenting line 231 of the script (Check: https://github.com/kienphanhuy/Cuki-IR-generator/issues/2).
 
 
 # Version history

@@ -34,13 +34,17 @@ All you need is:
 
 # Version history
 
-* **Version v1.0p uploaded 24/07/2020
-Filename: Cuki_IR_gen1p.m**
-Bug fix GUI now starts even if you have more audio-interface outputs than inputs. (works on Octave 6.1.0)
+* **Version v1.0s uploaded 23/04/2022
+Filename: Cuki_IR_gen1s.m**
+Graphic User interface bug fix for compatibility with Octave 7.1 by pokibg (Thank you!!)
 
 * **Version v1.0r uploaded 28/11/2020
 Filename: Cuki_IR_gen1r.m**
 Generate an "itp" file with smoother high end. (less harshness)
+
+* **Version v1.0p uploaded 24/07/2020
+Filename: Cuki_IR_gen1p.m**
+Bug fix GUI now starts even if you have more audio-interface outputs than inputs. (works on Octave 6.1.0)
 
 * **Version v1.0o uploaded 22/07/2020
 Filename: Cuki_IR_gen1o.m**

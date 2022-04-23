@@ -1,7 +1,5 @@
 # Cuki-IR-generator
 
-![Cuki-IR-generator Screenshot](screenshots/screenshot.jpg)
-
 Cuki-IR-generator is a Software to generate IR files from acoustic instruments. This version works on GNU Octave and needs no packages. So it is very easy to use.
 
 I started to develop this program years ago. This is a "light" version of the program I initially created using MATLAB.
@@ -34,28 +32,16 @@ All you need is:
 
 # Version history
 
-* **Version v1.0p uploaded 24/07/2020
-Filename: Cuki_IR_gen1p.m**
-Bug fix GUI now starts even if you have more audio-interface outputs than inputs
+* **Version v2 uploaded 8/03/2022
+Filename: Cuki_IR_gen2.m**
+No GUI version
 
-* **Version v1.0r uploaded 28/11/2020
-Filename: Cuki_IR_gen1r.m**
-Generate an "itp" file with smoother high end. (less harshness)
-
-* **Version v1.0o uploaded 22/07/2020
-Filename: Cuki_IR_gen1o.m**
-Bug fix GUI shrinks with the window
-
-* **Version v1.0n uploaded 21/07/2020
-Filename: Cuki_IR_gen1n.m**
-Bug fix regarding low mode resonance detection
-Added J45 Jon Fields open source algorithm in the save option (Copyright Jon Fields 2020)
-
-* **Version v1.0l uploaded 21/07/2020
-Filename: Cuki_IR_gen1l.m**
-Bug fix regarding 44100 Hz recordings IR computation
-Bug fix regarding double clic on Mic/Pickup/IR
-Bug fix regarding clic on Mic/Pickup/IR while Mic/Pickup/IR is already playing
+% Cuki IR light algorithm without Graphic User interface or recording interface
+% To be used as
+%  IRgen2('filename.wav')
+% filename must be a stereo file with a recording of the acoustic guitar (around 1-3 min) 
+% Left: Pickup track
+% Right: Microphone track
 
 
 # Copyrigth notice

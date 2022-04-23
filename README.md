@@ -36,12 +36,15 @@ All you need is:
 Filename: Cuki_IR_gen2.m**
 No GUI version
 
-% Cuki IR light algorithm without Graphic User interface or recording interface
-% To be used as
-%  IRgen2('filename.wav')
-% filename must be a stereo file with a recording of the acoustic guitar (around 1-3 min) 
-% Left: Pickup track
-% Right: Microphone track
+Cuki IR light algorithm without Graphic User interface or recording interface
+
+ To be used as  IRgen2('filename.wav')
+
+ filename must be a stereo file with a recording of the acoustic guitar (around 1-3 min) 
+
+ Left: Pickup track
+
+ Right: Microphone track
 
 
 # Copyrigth notice

@@ -34,6 +34,11 @@ All you need is:
 
 # Version history
 
+
+* **Version v1.0t uploaded 01/05/2022
+Filename: Cuki_IR_gen1s.m**
+User friendly various updates by pokibg
+
 * **Version v1.0s uploaded 23/04/2022
 Filename: Cuki_IR_gen1s.m**
 Graphic User interface bug fix for compatibility with Octave 7.1 by pokibg (Thank you!!)
